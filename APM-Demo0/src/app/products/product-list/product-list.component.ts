@@ -25,7 +25,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   // Used to highlight the selected product in the list
   selectedProduct: Product | null;
   componentActive = true;
-  products$: Observable<Product>;
+  products$: Observable<Product[]>;
   errorMessage$: Observable<string>;
 
   constructor(private store: Store<fromProduct.State>, private productService: ProductService) { }
